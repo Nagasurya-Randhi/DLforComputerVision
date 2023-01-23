@@ -1,36 +1,14 @@
-# RCNN
+# Faster-RCNN
 
 In this project, MaskRCNN is implemented which addresses the task of instance seg-
 mentation, combining object detection and semantic segmentation into a per-pixel object detection framework. We train the Network on the standard COCO dataset, which has 80 object classes.
 
 ### Network Architecture
-![](images/NetworkArchitecture.png)
-![](images/network1.png)
-![](images/network2.png)
+![image](https://user-images.githubusercontent.com/31537022/214123356-3c1f7736-6f8e-4766-b334-7e5b2e10e380.png)
+![image](https://user-images.githubusercontent.com/31537022/214123266-dd7b2860-34c2-4864-98a3-37bc4b93b1f8.png)
+![image](https://user-images.githubusercontent.com/31537022/214123152-62cc8d42-6d5e-4ca0-b979-59fab8177afd.png)
 
 ### Loss Objective
-![](images/Loss1.png)
+![image](https://user-images.githubusercontent.com/31537022/214123608-a9a741fd-c9dd-4244-8a00-66fc935cea69.png)
 
-### Ground Truth and Outputs From Region Proposal Network
-Region Proposal Networks (RPNs) are "attention mechanisms" for the object detection task, performing a crude but inexpensive first estimation of where the bounding boxes of the objects should be. 
-
-![](images/GTandRPN.png)
-![](images/GTandRPN2.png)
-
-### Output From Network Before Post-Processing
-![](images/networkOutput.png)
-![](images/networkOutput1.png)
-
-
-### After Post-Processing
-![](images/postProc.png)
-![](images/postProc1.png)
-
-### Loss Plots
-![](images/Losses.png)
-
-### MAP
-![](images/MAP.png)
-
-
-
+Loss plots, input and output visualization, and mAP can be seen inside the notebook.
